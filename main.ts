@@ -2,7 +2,7 @@
  *
  * Created by: Mark lutabi
  * Created on: Sep 2024
- * This program plays rock,papper and scissors.
+ * This program plays rock,paper and scissors.
 */
 
 // variables
@@ -20,22 +20,22 @@ input.onGesture(Gesture.Shake, function () {
     // if randomNumber was 0 ROCK
     if (randomNumber == 0) {
     basic.showIcon(IconNames.SmallSquare)
-        pause(1000)
+        pause(5000)
         basic.showIcon(IconNames.Happy)
     }
    
 
-    // if randomNumber was 1 PAPPER
+    // if randomNumber was 1 PAPER
     if (randomNumber == 1) {
     basic.showIcon(IconNames.Square)
-    pause(1000)
+    pause(5000)
     basic.showIcon(IconNames.Happy)
     }
 
     // if randomNumber was 2 SCISSORS
     if (randomNumber == 2) {
     basic.showIcon(IconNames.Scissors)
-        pause(1000)
+        pause(5000)
         basic.showIcon(IconNames.Happy)
     }
     
@@ -49,10 +49,6 @@ input.onGesture(Gesture.Shake, function () {
         input.onButtonPressed(Button.B, function () {
             basic.clearScreen()
         basic.showString("Score:" + score)
-      
-
-
-
    
 })
 })
