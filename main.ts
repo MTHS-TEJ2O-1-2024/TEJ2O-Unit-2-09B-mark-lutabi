@@ -19,20 +19,20 @@ input.onGesture(Gesture.Shake, function () {
     // if randomNumber was 0 ROCK
     if (randomNumber == 0) {
         basic.showIcon(IconNames.SmallSquare)
-        pause(3000)
+        pause(2000)
         basic.showIcon(IconNames.Happy)
     }
 
     // if randomNumber was 1 PAPER
     if (randomNumber == 1) {
         basic.showIcon(IconNames.Square)
-        pause(3000)
+        pause(2000)
         basic.showIcon(IconNames.Happy)
     }
     // if randomNumber was 2 SCISSORS
     if (randomNumber == 2) {
         basic.showIcon(IconNames.Scissors)
-        pause(3000)
+        pause(2000)
         basic.showIcon(IconNames.Happy)
     }
 
@@ -40,7 +40,7 @@ input.onGesture(Gesture.Shake, function () {
         basic.clearScreen()
         basic.showIcon(IconNames.Yes)
         score = score + 1
-        pause(3000)
+        pause(2000)
         basic.showIcon(IconNames.Happy)
     })
     input.onButtonPressed(Button.B, function () {
@@ -49,4 +49,5 @@ input.onGesture(Gesture.Shake, function () {
         basic.showIcon(IconNames.Happy)
 
     })
+    
 })
