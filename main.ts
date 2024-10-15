@@ -1,7 +1,7 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: Mr. Coxall
- * Created on: Sep 2020
+ * Created by: Mark lutabi
+ * Created on:Oct 2024
  * This program plays rock, papper, scissors.
 */
 
@@ -9,7 +9,7 @@
 let randomNumber: number = 0
 let score: number = 0
 
-
+randomNumber = -1
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 input.onGesture(Gesture.Shake, function () {
@@ -35,19 +35,18 @@ input.onGesture(Gesture.Shake, function () {
         pause(2000)
         basic.showIcon(IconNames.Happy)
     }
+})
 
-    input.onButtonPressed(Button.A, function () {
-        basic.clearScreen()
-        basic.showIcon(IconNames.Yes)
-        score = score + 1
-        pause(2000)
-        basic.showIcon(IconNames.Happy)
+input.onButtonPressed(Button.A, function () {
+   basic.clearScreen()
+   basic.showIcon(IconNames.Yes)
+   score = score + 1
+   pause(2000)
+   basic.showIcon(IconNames.Happy)
     })
     input.onButtonPressed(Button.B, function () {
-        basic.clearScreen()
-        basic.showString("Score:" + score)
-        basic.showIcon(IconNames.Happy)
-
-    })
-    
-})
+basic.clearScreen()
+    basic.showString("Score:" + score)
+    basic.pause(2000)
+   basic.showIcon(IconNames.Happy)
+   })
